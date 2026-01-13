@@ -10,3 +10,9 @@ ping:
 
 serialize:
 	mvn exec:java -q -Dexec.mainClass="edu.hse.net.Serialize"
+
+client:
+	mvn exec:java -q -Dexec.mainClass="edu.hse.net.Client"
+
+server:
+	mvn exec:java -q -Dexec.mainClass="edu.hse.net.Server"

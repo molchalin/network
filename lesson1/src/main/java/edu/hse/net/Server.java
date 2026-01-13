@@ -34,7 +34,7 @@ public final class Server {
         ) {
             String line;
             while ((line = in.readLine()) != null) {
-                out.println(line);
+                out.println("Server: " + line);
             }
         } catch (IOException e) {
             System.out.println("Client disconnected: " + client.getRemoteSocketAddress());

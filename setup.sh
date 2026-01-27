@@ -24,3 +24,7 @@ echo "student ALL=(ALL:ALL) ALL" | sudo tee -a /etc/sudoers
 
 sudo su student
 echo "xfce4-session" > ~/.xsession
+exit
+
+# lesson 3
+sudo apt install -y libpcap-dev nethogs iperf3 iptraf-ng

@@ -8,6 +8,10 @@ sudo systemctl restart ufw
 ```
 
 ```bash
-sudo iptables -t nat -A PREROUTING -p tcp --dport 5022 -j DNAT --to-destination <IP>:22
-sudo iptables -t nat -A POSTROUTING -p tcp --dport 22 -d <IP> -j MASQUERADE
+sudo iptables -t nat -A PREROUTING -p tcp --dport 5022 -j DNAT --to-destination <PRIVATE_IP_2>:22
+sudo iptables -t nat -A POSTROUTING -p tcp --dport 22 -d <PRIVATE_IP_2> -j MASQUERADE
+```
+
+```bash
+sudo ssh -p 5022 student@<PUBLIC_IP>
 ```

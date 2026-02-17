@@ -9,7 +9,7 @@
 <dependency>
   <groupId>org.pcap4j</groupId>
   <artifactId>pcap4j-packetfactory-static</artifactId>
-  <version>1.8.3</version>
+  <version>1.8.2</version>
 </dependency>
 ```
 

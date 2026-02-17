@@ -47,9 +47,9 @@ public class Sniffer {
             }
 
             String srcAddr = ipv4.getHeader().getSrcAddr().getHostAddress();
-            int srcPort = tcp.getHeader().getSrcPort().value();
+            int srcPort = tcp.getHeader().getSrcPort().valueAsInt();
             String dstAddr = ipv4.getHeader().getDstAddr().getHostAddress();
-            int dstPort = tcp.getHeader().getDstPort().value();
+            int dstPort = tcp.getHeader().getDstPort().valueAsInt();
 
             System.out.println("=== PACKET CAPTURED ===");
             System.out.println("SRC: " + srcAddr + ":" + srcPort);

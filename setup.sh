@@ -28,3 +28,6 @@ exit
 
 # lesson 3
 sudo apt install -y libpcap-dev nethogs iperf3 iptraf-ng
+
+# lesson 5
+sudo apt install -y net-tools tcpdump
